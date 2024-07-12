@@ -1,0 +1,40 @@
+"number","week","datum","title","description",
+1,"1","15-5-2024","Development omgeving","Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env",
+2,"2","15-5-2024","HTML Frontend","Ontwikkel een basis html site voor dit project.",
+3,"3","16-5-2024","PHP","Dynamische onderdelen op de website, hergebruik van bestanden.",
+4,"4","16-5-2024","PHP - MySQL","Data uit de database halen en weergeven.",
+5,"5","22-5-2024","SEO","Slug/permalink, titels",
+6,"6","22-5-2024","REST API","Maak een API zodat je later vanuit de frontend dynamisch data kan laden.",
+7,"7","6-6-2024","Mail send","Mails versturen en opmaken",
+8,"8","13-6-2024","","",
+9,"9","20-6-2024","","",
+10,"10","27-6-2024","","",
+
+
+
+=> doel
+https://github.com/progsen/M5ProgWebC24exer/blob/main/03%20db%20users/02%20app%20user%20testen.MD
+=> setup
+=> structuur van php in docker
+    - public
+    - src folder
+    - config
+    - gitignore
+        - .env
+        - node_modules
+    - images
+    - scripts
+    - css
+=> docker setup MET db installatie ( deploy )
+=> index.php met includes van header / footer ( structuur duidelijk )
+=> Informatie uit de db weergeven
+=> detail pagina met informatie op basis van GET
+=> slug / permalink / SEO friendly url
+    - met htaccess
+    - naar index.php
+=> week 7 start eind product
+    - doel: werkend
+    - geen errors
+=> php / html / css
+
+
