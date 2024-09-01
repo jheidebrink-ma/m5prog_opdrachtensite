@@ -3,4 +3,5 @@
 
 1. [Start](onderwerp)
 2. [Development omgeving opzetten](installatie)
-3. [Configuratie en testen](configuratie)
+3. [HTML bestanden](html)
+4. [Testen](testen)

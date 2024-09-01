@@ -1,40 +1,9 @@
 "number","week","datum","title","description",
-1,"1","15-5-2024","Development omgeving","Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env",
-2,"2","15-5-2024","HTML Frontend","Ontwikkel een basis html site voor dit project.",
-3,"3","16-5-2024","PHP","Dynamische onderdelen op de website, hergebruik van bestanden.",
-4,"4","16-5-2024","PHP - MySQL","Data uit de database halen en weergeven.",
-5,"5","22-5-2024","SEO","Slug/permalink, titels",
-6,"6","22-5-2024","REST API","Maak een API zodat je later vanuit de frontend dynamisch data kan laden.",
-7,"7","6-6-2024","Mail send","Mails versturen en opmaken",
-8,"8","13-6-2024","","",
-9,"9","20-6-2024","","",
-10,"10","27-6-2024","","",
-
-
-
-=> doel
-https://github.com/progsen/M5ProgWebC24exer/blob/main/03%20db%20users/02%20app%20user%20testen.MD
-=> setup
-=> structuur van php in docker
-    - public
-    - src folder
-    - config
-    - gitignore
-        - .env
-        - node_modules
-    - images
-    - scripts
-    - css
-=> docker setup MET db installatie ( deploy )
-=> index.php met includes van header / footer ( structuur duidelijk )
-=> Informatie uit de db weergeven
-=> detail pagina met informatie op basis van GET
-=> slug / permalink / SEO friendly url
-    - met htaccess
-    - naar index.php
-=> week 7 start eind product
-    - doel: werkend
-    - geen errors
-=> php / html / css
-
-
+1,"2","12-9-2023","Development omgeving","Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env",
+2,"3","19-9-2024","HTML Frontend","Ontwikkel een basis html site voor dit project met behulp van een front-end framework.",
+3,"4","26-5-2024","PHP","Dynamische onderdelen op de website, hergebruik van bestanden.",
+4,"5","3-10-2024","PHP - MySQL","Data uit de database halen en weergeven.",
+5,"6","10-10-2024","PHP - MySQL","Data uit de database halen en weergeven.",
+6,"7","17-10-2024","SEO","Slug/permalink, titels",
+7,"8","27-10-2024","Zoeken","Zoeken door de database vanuit de front-end",
+9,"9","7-11-2024","Afronden","Test het project en lever het resultaat in.",
