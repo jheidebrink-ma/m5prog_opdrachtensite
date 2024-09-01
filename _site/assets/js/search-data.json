@@ -168,11 +168,11 @@
     "relUrl": "/les-2/index"
   },"24": {
     "doc": "Les 4",
-    "title": "Les 4 - PHP - MySQL",
-    "content": ". Data uit de database halen en weergeven. Deze opdracht komt binnenkort beschikbaar. ",
-    "url": "/m5prog_opdrachtensite/les-4/index#les-4---php---mysql",
+    "title": "Les 4 - MySQL data structureren",
+    "content": ". Data in de database plaatsen en afbeeldingen op beschikbaar maken voor public. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-4/index#les-4---mysql-data-structureren",
     
-    "relUrl": "/les-4/index#les-4---php---mysql"
+    "relUrl": "/les-4/index#les-4---mysql-data-structureren"
   },"25": {
     "doc": "Les 4",
     "title": "Les 4",
@@ -182,11 +182,11 @@
     "relUrl": "/les-4/index"
   },"26": {
     "doc": "Les 3",
-    "title": "Les 3 - PHP",
-    "content": ". Dynamische onderdelen op de website, hergebruik van bestanden. Maak de opdrachten voor deze les . | Maak de structuur van je custom thema | Stel de style.css in | Activeer en controleer dit thema | . ",
-    "url": "/m5prog_opdrachtensite/les-3/index#les-3---php",
+    "title": "Les 3 - Bestand structuur met PHP",
+    "content": ". Dynamische onderdelen op de website, hergebruik van bestanden. Deze opdracht komt binnenkort beschikbaar. ",
+    "url": "/m5prog_opdrachtensite/les-3/index#les-3---bestand-structuur-met-php",
     
-    "relUrl": "/les-3/index#les-3---php"
+    "relUrl": "/les-3/index#les-3---bestand-structuur-met-php"
   },"27": {
     "doc": "Les 3",
     "title": "Les 3",
@@ -252,11 +252,11 @@
     "relUrl": "/#opdrachten-en-uitleg"
   },"36": {
     "doc": "Home",
-    "title": "Les 1:  Development omgeving",
+    "title": "Les 1:  Development omgeving instellen",
     "content": "Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env . Start . ",
-    "url": "/m5prog_opdrachtensite/#les-1--development-omgeving",
+    "url": "/m5prog_opdrachtensite/#les-1--development-omgeving-instellen",
     
-    "relUrl": "/#les-1--development-omgeving"
+    "relUrl": "/#les-1--development-omgeving-instellen"
   },"37": {
     "doc": "Home",
     "title": "Les 2:  HTML Frontend",
@@ -266,18 +266,18 @@
     "relUrl": "/#les-2--html-frontend"
   },"38": {
     "doc": "Home",
-    "title": "Les 3:  PHP",
-    "content": "Dynamische onderdelen op de website, hergebruik van bestanden. Start . ",
-    "url": "/m5prog_opdrachtensite/#les-3--php",
+    "title": "Les 3:  Bestand structuur met PHP",
+    "content": "Deze les komt binnenkort online. Vanaf 26-09-2024 online . ",
+    "url": "/m5prog_opdrachtensite/#les-3--bestand-structuur-met-php",
     
-    "relUrl": "/#les-3--php"
+    "relUrl": "/#les-3--bestand-structuur-met-php"
   },"39": {
     "doc": "Home",
-    "title": "Les 4:  PHP - MySQL",
+    "title": "Les 4:  MySQL data structureren",
     "content": "Deze les komt binnenkort online. Vanaf 03-10-2024 online . ",
-    "url": "/m5prog_opdrachtensite/#les-4--php---mysql",
+    "url": "/m5prog_opdrachtensite/#les-4--mysql-data-structureren",
     
-    "relUrl": "/#les-4--php---mysql"
+    "relUrl": "/#les-4--mysql-data-structureren"
   },"40": {
     "doc": "Home",
     "title": "Les 5:  PHP - MySQL",
@@ -295,14 +295,14 @@
   },"42": {
     "doc": "Home",
     "title": "Les 7:  Zoeken",
-    "content": "Deze les komt binnenkort online. Vanaf 27-10-2024 online . ",
+    "content": "Deze les komt binnenkort online. Vanaf 24-10-2024 online . ",
     "url": "/m5prog_opdrachtensite/#les-7--zoeken",
     
     "relUrl": "/#les-7--zoeken"
   },"43": {
     "doc": "Home",
     "title": "Les 9:  Afronden",
-    "content": "Deze les komt binnenkort online. Vanaf 07-11-2024 online . ",
+    "content": "Deze les komt binnenkort online. Vanaf 24-10-2024 online . ",
     "url": "/m5prog_opdrachtensite/#les-9--afronden",
     
     "relUrl": "/#les-9--afronden"
@@ -316,7 +316,7 @@
   },"45": {
     "doc": "Les 6",
     "title": "Les 6 - SEO",
-    "content": ". Slug/permalink, titels . Deze opdracht komt binnenkort beschikbaar. ",
+    "content": ". Slug / SEO friendly url, titels . Deze opdracht komt binnenkort beschikbaar. ",
     "url": "/m5prog_opdrachtensite/les-6/index#les-6---seo",
     
     "relUrl": "/les-6/index#les-6---seo"
@@ -329,11 +329,11 @@
     "relUrl": "/les-6/index"
   },"47": {
     "doc": "Les 1",
-    "title": "Les 1 - Development omgeving",
+    "title": "Les 1 - Development omgeving instellen",
     "content": ". Docker en structuur van documenten. Waar staat wat. Maak gebruik van gitignore en .env . Maak de opdrachten voor deze les . | Start | Development omgeving opzetten | HTML bestanden | Testen | . ",
-    "url": "/m5prog_opdrachtensite/les-1/#les-1---development-omgeving",
+    "url": "/m5prog_opdrachtensite/les-1/#les-1---development-omgeving-instellen",
     
-    "relUrl": "/les-1/#les-1---development-omgeving"
+    "relUrl": "/les-1/#les-1---development-omgeving-instellen"
   },"48": {
     "doc": "Les 1",
     "title": "Les 1",
