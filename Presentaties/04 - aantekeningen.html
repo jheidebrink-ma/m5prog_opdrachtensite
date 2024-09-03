@@ -1,0 +1,64 @@
+<h1>Overzicht van les 02</h1>
+
+<h2>Deze les zijn wij bezig geweest met:</h2>
+<ul>
+    <li>Planning</li>
+    <li>Views en code opsplitsen</li>
+    <li>Data in arrays</li>
+    <li>Database verbinding</li>
+    <li>Voor de volgende les</li>
+</ul>
+<br>
+
+
+<h2>Planning</h2>
+De planning is te zien in teams: <a href="https://mediacollegeamsterdam.sharepoint.com/:b:/r/sites/SDM5SKILLSocialResponsibility20232024-docenten/Gedeelde%20documenten/docenten/lesmateriaal/04%20-%20Planning.pdf?csf=1&web=1&e=BrVDov">04 - planning.pdf</a> <br>
+<br>
+
+<h2>Views en code</h2>
+Buiten de public folder staat nu een source folder met daarin een views folder, deze kunnen ook naast elkaar staan. Als ze maar buiten de public folder staan. <br>
+In de views folder staan verschillende bestanden, zoals bijvoorbeeld een cards.php waar de html van het formulier staat. <br>
+<br>
+
+<h2>Data in arrays</h2>
+Vandaag hebben wij een multi dimensionale associative array besproken. Dit is een array met meerdere lagen, waarbij de keys een naam hebben zodat je later de correcte data kan terug vinden. <br>
+Door deze array kunnen wij lopen door gebruik te maken van een foreach() loop, dit hebben wij ook geïmplementeerd in de cards op de home pagina. <br>
+<br>
+
+<h2>Database verbinding</h2>
+Om ervoor te zorgen dat je de database kunt beheren heb je 2 opties: <br>
+1- installatie van phpmyadmin.<Br>
+    PhpMyAdmin is een web based tool en maakt op dezelfde manier verbinding als dat je met je web applicatie doet <br>
+    - Download en plaats deze je in je public folder <br>
+    - Kopieer config.sample.inc.php naar config.inc.php <br>
+    - pas in dit bestand de host aan naar de naam van je database container, bv: <br>
+    <pre>$cfg['Servers'][$i]['host'] = 'mariadb';</pre>
+    - ga in he browser naar de betreffende folder, bijvoorbeeld<br>
+    http://localhost:8080/phpMyAdmin/ <br>
+    Hier kun je inloggen met de gegevens die in je docker-compose.yml staan onder het stukje van je database: <br>
+    MYSQL_USER: db_user <br>
+    MYSQL_PASSWORD: mijn_p@ss# <br>
+2- HeidiSQL of Sequel Ace <br>
+Voor deze tool moet je eerst de poort naar je ddatabase open zetten, dit doe je in je docker-compose.yml file. <br>
+Plaats in het database gedeelte bijvoorbeeld de volgende code: <br>
+<pre>ports:
+- 3307:3306
+</pre>
+Build nu docker opnieuw:
+Run dit commando in de terminal: <br>
+<pre>docker-compose up --build</pre>
+Nadat je docker in de terminal opnieuw gebuild hebt kun je verbinding maken met de volgende gegevens:
+host: localhost <br>
+port: 3307 <br>
+user: je MYSQL_USER <br>
+pass: je MYSQL_PASSWORD <br>
+<br>
+<br>
+Binnen een van deze tools kun je nu een tabel aanmaken die je voor je project gaat gebruiken. <br>
+Let op dat je niet de database: information_schema verwijdert, deze bevat namelijk alle gegevens die mysql nodig heeft voor de database. <br>
+<br>
+<h2>Volgende les</h2>
+Zorg dat je de volgende odnerdelen werkend hebt voor de volgende les:
+- Docker <br>
+- Database management tool <br>
+- Html onderdelen zoals de cards <br>

@@ -1,0 +1,78 @@
+<h1>Aantekeningen vandaag</h1>
+<br>
+Vandaag zijnn wij bezig geweest met: <br>
+<ul>
+    <li>Uitleg over database opzetten ( via docker )</li>
+    <li>Connection via externe tool</li>
+    <li>Phpmyadmin container toevoegen</li>
+    <li>Inloggen als root in de database</li>
+    <li>Verbinding vanaf website</li>
+</ul>
+
+<h2>Opzetten van database</h2>
+Momenteel heb je in je Docker omgeving een mariaDB container. 
+Hier staat straks al je data in. Deze omgeving kun je niet direct bereiken via browser, het is een ander protocol.
+In deze container staat wel alle data, maar die kun je ook niet via de finder of explorer bereiken. <br>
+Als je de data wilt opslaan voor ene backup of commit dan moet je deze exporteren. <br>
+Dit kan met dezelfde tool als waarmee je de database beheerd.
+<h2>Verbinding met een externe tool</h2>
+Om de database te beheren kun je gebruik maken van een web-based tool zoals PhpMyAdmin of een Applicatie op je computer.
+Met een externe tool zoals HeidiSQL, SequelAce of SequelPro kun je de database beheren door in te loggen op de database container via een externe poort. <br>
+Deze poort moet je eerst open zetten in docker, dit doe je door in je docker-compose.yml bij de database container een stukje in te stellen:
+Plaats de volgende code: <br>
+<pre>ports:
+- 3307:3306
+</pre>
+Let hierbij op dat de inspringingen correct zijn omdat je anders errors krijgt tijdens het opstarten van Docker.<br>
+Om de wijzigingen te activeren moet je Docker opnieuw builden ( instellen ), dat doe je met het volgende commando: <br>
+<pre>docker-compose up --build</pre>
+Je kunt aan het eind ook <pre> -d</pre> plaatsen om docker in de achtergrond op te starten, je kunt je logs dan vinden in Docker desktop, niet meer in de terminal. <br>
+Nadat je docker in de terminal opnieuw gebuild hebt kun je verbinding maken met de volgende gegevens:
+host: localhost <br>
+port: 3307 <br>
+user: je MYSQL_USER <br>
+pass: je MYSQL_PASSWORD <br>
+<br>
+<h2>PhpMyAdmin</h2>
+Een andere optie is gebruik maken van phpMyAdmin, dit is een web based database beheer tool die je ook online bij veel hosting pakketen tegen komt. <br>
+Je kunt deze installeren door PhpMyAdmin te downloaden en in je public folder te plaatsen of je maakt een nieuwe container in je docker omgeving. Dit is minder instel werk. <br>
+Plaats de volgende regels in je docker-compose.yml <br>
+<pre>
+  # php myadmin in an external image
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: root
+      PMA_PASSWORD: **Je_root_database_wachtwoord**
+    ports:
+      - "8088:80"
+</pre>
+Let ook nu weer op de inspringingen. <br>
+De string <strong>**Je_root_database_wachtwoord**</strong> moet je vervangen door het wachtwoord dat je eerder bij de database container hebt ingesteld. <br>
+Om de wijzigingen te activeren moet je Docker opnieuw builden ( instellen ), dat doe je met het volgende commando: <br>
+<pre>docker-compose up --build</pre>
+Je kunt aan het eind ook <pre> -d</pre> plaatsen om docker in de achtergrond op te starten, je kunt je logs dan vinden in Docker desktop, niet meer in de terminal. <br>
+Je kunt nu verbinding maken je de phpmyadmin omgeving door te gaan naar http://localhost:8088 <br>
+<br>
+<h2>Inloggen als root</h2>
+ALs je voor het beheer inlogt als root dan kun je een database aanmaken en beheren. Omdat je nu lokaal aan het ontwikkelen bent hoef je je niet heel erg druk te maken over beveiliging. <br>
+<br>
+<h2>Website verbinden met de database</h2>
+Nu alles klaar staat kun je verbinding maken met de database. Hiervoor heb ik een aantal voorbeeld schripts klaar staan in Teams, zie <strong>09 - queries.php</strong>:
+<pre>
+$connection = new mysqli($servername, $username, $password, $dbname);
+$query      = 'SELECT * FROM products ORDER BY title';
+$result     = $conn->query($query);
+$item       = $result->fetch_assoc();
+</pre>
+
+Hierbij maak ik via mysqli een verbinding, die sla ik op in de $connection vervolgens maak ik een query aan om alle producten op te halen. <br>
+Na het ophalen van de producten heb ik in de variabele $result een resultaat object. Dit kan ik nog niet direct gebruiken. 
+Daarvoor moet je eerst de waarde goed vertalen naar een manier zoals jij het wilt gebruiken in je code, bijvoorbeeld via een object of array. <br>
+In dit geval maak ik er een associative array van.
+<br>
+
+<h2>Volgende stap</h2>
+Met deze informatie moet het mogelijk zijn om je database te beheren, een tabel toe te voegen met de juiste kolommen en vervolgens een aantal producten ( rows ) toe te voegen. <br>
+Zorg er nu voor dat je alle items in ene overzicht op de homepagina weer geeft.<br>
