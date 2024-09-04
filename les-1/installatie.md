@@ -33,7 +33,7 @@ Er zijn een aantal vereisten aan dit project:
 2. Navigeer naar de repo folder die je net gekloond hebt
 3. Maak een nieuw bestand aan met de naam: `docker-compose.yml`
 4. maak de structuur van dit yml bestand
-```yaml
+```yml
 services:
     NAAM:
         image: WELKE IMAGE HEB JE NODIG
