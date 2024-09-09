@@ -7,7 +7,7 @@ nav_exclude: true
 
 ## HTML bestanden
 {: .text-green-100 .fs-6 }
-Nu je de structuur hebt van je project is het tijd omervoor te zorgen dat je ook iets kunt zien. 
+Nu je de file structuur hebt van je project is het tijd om ervoor te zorgen dat je ook iets kunt zien. 
 
 ---
 ### 1- index.php
