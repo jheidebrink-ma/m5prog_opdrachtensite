@@ -1,0 +1,48 @@
+services:
+
+    # PHP FPM Service
+    php:
+        image: wodby/php:latest
+        container_name: naam_php
+        volumes:
+            - './:/var/www/html'
+        depends_on:
+            - mariadb
+
+    # Nginx Service
+    nginx:
+        image: nginx:latest
+        container_name: naam_nginx
+        ports:
+            - 80:80
+        links:
+            - 'php'
+        volumes:
+            - './:/var/www/html'
+            - './docker:/etc/nginx/conf.d'
+        depends_on:
+            - php
+
+    # MariaDB Service
+    mariadb:
+        image: mariadb:latest
+        container_name: naam_mariadb
+        environment:
+            MYSQL_DATABASE: dbnaam
+            MYSQL_USER: db_user
+            MYSQL_PASSWORD: db_p@ss
+            MYSQL_ROOT_PASSWORD: db_r00tp@ss
+    # alleen om verbinding te maken vanuit een externe database tool
+    #    ports:
+    #      - 3305:3306
+
+    # phpmyadmin in an external image
+    phpmyadmin:
+        image: phpmyadmin:latest
+        container_name: naam_phpmyadmin
+        environment:
+            PMA_HOST: mariadb
+            PMA_USER: db_user
+            PMA_PASSWORD: db_p@ss
+        ports:
+            - 8805:80

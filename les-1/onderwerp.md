@@ -12,7 +12,7 @@ Het doel is om te leren hoe je bestanden op een server moet structureren.
 
 ---
 ### 1- Onderzoek wat er gedaan moet worden
-- Lees eerst de [project omschrijving](project_description.md) zodat je weet wat er van je verwacht wordt.
+- Lees eerst de [project omschrijving](../project_description) zodat je weet wat er van je verwacht wordt.
 
 ---
 ### 2- Verzamel data
