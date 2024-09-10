@@ -58,7 +58,11 @@ services:
 - **nginx** met de image: nginx:latest en de externe poort **80**
 - **mariadb** met de image: mariadb:latest
 - **phpmyadmin** met de image: phpmyadmin:latest en de externe poort **8805**
-- De Nginx container link je aan php
+- De Nginx container link je aan php en plaats je de volgende volumes:
+```yml
+- './:/var/www/html'
+- './docker:/etc/nginx/conf.d'
+```
 - De Mariadb container heeft de volgende environment constanten nodig: 
 ```yml
    MYSQL_DATABASE: '${DB_NAME}'
