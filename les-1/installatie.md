@@ -137,6 +137,50 @@ Maak een public folder aan waarin de bestanden komen die de browser mag benadere
 2. plaats in deze folder een bestand `index.php`
 
 ---
+### 7- NGINX config
+Maak in de root een nieuwe folder: `docker` aan.
+Plaats in deze folder een bestand: `nginx.conf`
+Plaats de volgende code in dit bestand:
+```apacheconf
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    
+    server_name localhost;
+
+    root /var/www/html/public;
+    index index.php index.html;
+
+    # Support Yii2 pretty URL routing
+    location / {
+            try_files $uri $uri/ =404;
+            if (!-e $request_filename){
+                    rewrite ^/(.*) /index.php?r=$1 last;
+            }
+    }
+
+    location ~* \.php$ {
+        fastcgi_pass php:9000;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+    }
+
+    # Prevent additional headers like TRACE, DELETE, PUSH
+    if ($request_method !~ ^(GET|HEAD|POST)$ )
+        {
+            return 405;
+        }
+}
+```
+
+---
+### 8- Start docker
+Start nu docker met het volgende commando: `docker compose up`
+
+
+
+---
 {% include commit_push.md %}
 
 ---
