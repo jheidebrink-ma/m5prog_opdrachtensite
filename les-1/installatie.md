@@ -136,15 +136,15 @@ _sources
 
 ---
 ### 6- Public folder 
-Maak een public folder aan waarin de bestanden komen die de browser mag benaderen.
-1. in de root van je project plaats je een folder met de naam: `public`
-2. plaats in deze folder een bestand `index.php`
+Maak een public folder aan waarin de bestanden komen die de browser mag benaderen.  
+1. in de root van je project plaats je een folder met de naam: `public`  
+2. plaats in deze folder een bestand `index.php`  
 
 ---
 ### 7- NGINX config
-Maak in de root een nieuwe folder: `docker` aan.
-Plaats in deze folder een bestand: `nginx.conf`
-Plaats de volgende code in dit bestand:
+Maak in de root een nieuwe folder: `docker` aan.  
+Plaats in deze folder een bestand: `nginx.conf`  
+Plaats de volgende code in dit bestand:  
 ```apacheconf
 server {
     listen 80 default_server;
