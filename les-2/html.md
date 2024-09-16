@@ -7,26 +7,39 @@ nav_exclude: true
 
 ## HTML bestanden
 {: .text-green-100 .fs-6 }
-Nu je de structuur hebt van je project is het tijd omervoor te zorgen dat je ook iets kunt zien. 
+Nu je de structuur hebt van je project is het tijd om ervoor te zorgen dat je ook iets kunt zien.  
+Aan het eind van deze les heb je 3 verschillende pagina's op je website.  
+Wij werken vanaf nu met `*.php` bestanden zodat wij straks dynamische content kunnen plaatsen.  
 
 ---
-### 1- index.php
-In je **index.php** bestand plaats je een HTML structuur, bijvoorbeeld:
-```html
-<html>
-<head>
-    <title>Music Library</title>
-</head>
-<body>
-    Dit is een mooie tekst
-</body>
-</html>
-```
+### 1- Bootstrap
+Het is nu tijd om de html pagina in te delen.  
+Je kunt hiervoor gebruik maken van een standaard template van bijvoorbeeld Bootstrap of een ander systeem dat je hebt gekozen tijdens de eerste les.  
+In dit voorbeeld behandel ik [Bootstrap](https://getbootstrap.com).  
+### In deze les beginnen wij ook met de vormgeving, maar voor nu is de structuur belangrijk.
+{: .text-orange-100 .fs-3 }
+<br>
+![website.png](images%2Fwebsite.png)
 
 ---
-### 2- Demo data
-In mijn HTML voorbeeld zie je nog helemaal geen structuur of vormgeving.  
-Alle deze HTML is alleen om te controleren of jouw webserver werkt.
+### 1- HTML
+Hier kun je diverse Bootstrap voorbeelden vinden: [Download Bootstrap Examples](https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip)  
+Ik gebruik voor nu het voorbeeld [CDN-starter](https://github.com/twbs/examples/tree/main/starter/)  
+Bekijk hier de complete HTML pagina: [index.html](data%2Findex.html)
+In de `index.php` plaats ik de basis HTML stuctuur zodat ik een complete pagina zie op mijn website.
+
+---
+### 2- Navigatie
+Zoek nu in je source het gedeelte op van de navigatie en pas deze zo aan dat je kunt linken naar de volgende 3 pagina's: 
+1. index.php _( home pagina )_
+2. single.php _( detail pagina )_
+3. about.php _( over deze site pagina )_
+
+---
+### 2- About en Single pages
+Kopieer nu de index.php naar de `single.php` én `about.php`  
+Je hebt nu een website met 3 dezelfde pagina's.  
+Verander wel de titel en een paar stukken van de tekst zodat je weet welke pagina je bekijkt.  
 
 ---
 {% include commit_push.md %}
@@ -34,4 +47,4 @@ Alle deze HTML is alleen om te controleren of jouw webserver werkt.
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-[testen](testen)
+[Bootstrap via Sass en Webpack](webpack)
