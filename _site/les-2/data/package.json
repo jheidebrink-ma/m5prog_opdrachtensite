@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "my-theme-name",
+  "name": "my-project-name",
   "description": "Go to the theme folder and run: npm run build",
   "version": "1.0.0",
   "keywords": [],
@@ -11,7 +11,7 @@
   },
   "author": "My Name",
   "license": "ISC",
-  "homepage": "https://localhost/m8prog",
+  "homepage": "https://localhost/m5prog",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3"

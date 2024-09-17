@@ -1,4 +1,4 @@
 
 import 'bootstrap';
 
-console.log('init M8PROG');
+console.log('init M5PROG');

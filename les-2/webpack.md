@@ -7,9 +7,8 @@ nav_exclude: true
 
 ## Webpack integreren
 {: .text-green-100 .fs-6 }
-
-Deze les een stuk minder verschillende stappen, dus heb je meer tijd om een mooie website te maken.  
-Om onze SASS en JavaScipt te compilen maak ik gebruik van `npm` in combinatie met `webpack` om de assets te renderen.  
+ 
+Om de SCSS en JavaScript assets te compilen maak ik gebruik van `npm` in combinatie met `webpack`.  
 {: .mb-0 }
 ## Let op, straks wordt er een **node_modules** folder gegenereerd, deze mag niet in git.
 {: .text-red-100 .fs-4 .mt-2 .mb-4 }
@@ -30,7 +29,7 @@ Je kunt een voorbeeld van dit pakket bestanden ook hier downloaden: [example](da
 ### 2- package.json
 In de [package.json](data%2Fpackage.json) kun je aangeven hoe je project heet en wat de locatie van `webpack.config.js` is.  
 Je vind ook diverse dependencies die nodig zijn voor het compilen van dit project.  
-Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoorbeeld `dev`
+Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoorbeeld `dev` en `build`.
 
 ---
 ### 3- webpack.config.js
@@ -38,12 +37,12 @@ In de [webpack.config.js](data%2Fwebpack.config.js) vind je de acties die uitgev
 
 ---
 ### 4- Packages installeren
-Het installeren van de packages doe je via `npm`.  
-Navigeer daarvoor in de terminal naar je thema folder en voer het volgende commando uit:  
+Het installeren van de packages _(dependencies)_ doe je via `npm`.  
+Navigeer daarvoor in de terminal naar je project folder en voer het volgende commando uit:  
 ```shell
 npm i
 ```
-_( npm install )_
+_( Een afkorting voor `npm install` )_  
 Je ziet nu een `node_modules` folder in je thema folder.  
 ### **Note:** Zorg ervoor dat je de node_modules in je `.gitignore` hebt staan zodat deze niet gepushed wordt naar je repo.
 {: .text-red-100 .fs-4 }
@@ -58,12 +57,16 @@ npm run dev
 ---
 ### 6- Scripts toevoegen aan de website 
 Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld zo:  
-` <link href="/dist/css/main.css" rel="stylesheet">`
+{% raw %}
+`<link href="/dist/css/main.css" rel="stylesheet"> `
+{% endraw %}
 
 ---
 ### 7- Scripts toevoegen aan de website 
 Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, bijvoorbeeld zo:  
+{% raw %}
 `<script src="/dist/js/main.js"></script>`
+{% endraw %}
 
 ---
 ### 8- Controleer
@@ -71,7 +74,7 @@ Bekijk je website nu in de browser.
 
 ---
 ### 9- Customize 
-Pas nu de `scss` en templates nu aan zodat de website voldoet aan de eisen van jouw project.
+Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.
 
 ---
 
