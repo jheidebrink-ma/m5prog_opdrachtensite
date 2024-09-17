@@ -186,6 +186,11 @@ server {
 ### 8- Start docker
 Start nu docker met het volgende commando: `docker compose up`
 
+---
+### 9- Note
+Wanneer je problemen blijft houden met je docker bestand, gebruik dan dit complete voorbeeld:
+[example](data%2Fdocker-compose.yml)
+
 
 
 ---
