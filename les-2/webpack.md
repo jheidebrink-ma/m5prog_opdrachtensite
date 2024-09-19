@@ -58,7 +58,7 @@ npm run dev
 ### 6- Scripts toevoegen aan de website 
 Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld zo:  
 {% raw %}
-`<link href="/dist/css/main.css" rel="stylesheet"> `
+`<link href="/dist/css/main.min.css" rel="stylesheet"> `
 {% endraw %}
 
 ---
@@ -70,11 +70,16 @@ Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, b
 
 ---
 ### 8- Controleer
-Bekijk je website nu in de browser.  
+Bekijk je website nu in de browser.
 
 ---
-### 9- Customize 
-Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.
+### 9- Customize JavaScript
+Pas nu de `main.js` aan door bijvoorbeeld een `console.log` die aangeeft dat het script werkt toe te voegen.  
+
+---
+### 10- Customize CSS
+Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.  
+Bijvoorbeeld door de achtergrond aan te passen.
 
 ---
 
