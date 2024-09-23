@@ -3,10 +3,10 @@ const miniCss = require("mini-css-extract-plugin");
 module.exports = {
     mode: 'production',
     entry: {
-        "main": ["./src/js/main.js", "./src/scss/main.scss"]
+        "main": ["./public/src/js/main.js", "./public/src/scss/main.scss"]
     },
     output: {
-        path: __dirname + "/dist/js/",
+        path: __dirname + "/public/dist/js/",
         filename: "[name].js"
     },
     watch: true,
