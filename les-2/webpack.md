@@ -16,13 +16,13 @@ Om de SCSS en JavaScript assets te compilen maak ik gebruik van `npm` in combina
 ---
 ### 1- Structuur
 Eerst heb je een structuur nodig.  
-Maak in je thema map een aantal folders en bestanden die je als basis nodig hebt:
-- src/js _( dit is de locatie van je javascripts die niet minified zijn )_
-- src/js/main.js _( dit is je js bestand met minimaal een console.log() functie erin )_
-- src/scss _( hierin staan je SASS bestanden )_
-- src/scss/main.scss _( je scss bestand met bijvoorbeeld je sass code )_
-- package.json _( hier staat in welke packages er nodig zijn zoals een sass compiler  )_
-- webpack.config.js _( hier zijn de functies gedefinieerd voor het compilen van de sass )_  
+Maak in je project een aantal folders en bestanden die je als basis nodig hebt:
+- /public/src/js _( dit is de locatie van je javascripts die niet minified zijn )_
+- /public/src/js/main.js _( dit is je js bestand met minimaal een console.log() functie erin )_
+- /public/src/scss _( hierin staan je SASS bestanden )_
+- /public/src/scss/main.scss _( je scss bestand met bijvoorbeeld je sass code )_
+- /package.json _( hier staat in welke packages er nodig zijn zoals een sass compiler  )_
+- /webpack.config.js _( hier zijn de functies gedefinieerd voor het compilen van de sass )_  
 Je kunt een voorbeeld van dit pakket bestanden ook hier downloaden: [example](data%2Fexample.zip)
 
 ---
@@ -58,7 +58,7 @@ npm run dev
 ### 6- Scripts toevoegen aan de website 
 Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld zo:  
 {% raw %}
-`<link href="/dist/css/main.css" rel="stylesheet"> `
+`<link href="/dist/css/main.min.css" rel="stylesheet"> `
 {% endraw %}
 
 ---
@@ -70,11 +70,16 @@ Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, b
 
 ---
 ### 8- Controleer
-Bekijk je website nu in de browser.  
+Bekijk je website nu in de browser.
 
 ---
-### 9- Customize 
-Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.
+### 9- Customize JavaScript
+Pas nu de `main.js` aan door bijvoorbeeld een `console.log` die aangeeft dat het script werkt toe te voegen.  
+
+---
+### 10- Customize CSS
+Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.  
+Bijvoorbeeld door de achtergrond aan te passen.
 
 ---
 

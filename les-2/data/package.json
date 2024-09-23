@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "my-project-name",
-  "description": "Go to the theme folder and run: npm run build",
+  "description": "Go to the project folder and run: npm run build",
   "version": "1.0.0",
   "keywords": [],
   "main": "webpack.config.js",
