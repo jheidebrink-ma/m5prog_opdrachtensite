@@ -35,8 +35,18 @@ Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoor
 ### 3- webpack.config.js
 In de [webpack.config.js](data%2Fwebpack.config.js) vind je de acties die uitgevoerd worden tijdens het compilen.  
 
+--- 
+### 4- main.scss
+Plaats in dit bestand de volgende code:
+```css
+@import "fonts";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+```
+Eventueel kun je onderaan nog een paar regels css plaatsen om bijvoorbeeld de achtergrond aan te passen.  
+
 ---
-### 4- Packages installeren
+### 5- Packages installeren
 Het installeren van de packages _(dependencies)_ doe je via `npm`.  
 Navigeer daarvoor in de terminal naar je project folder en voer het volgende commando uit:  
 ```shell
@@ -48,18 +58,19 @@ Je ziet nu een `node_modules` folder in je thema folder.
 {: .text-red-100 .fs-4 }
   
 ---
-### 5- Packages compilen
+### 6- Packages compilen
 Om de `sass` en de `javascripts` te compilen en in een `dist` folder te plaatsen kun je het volgende commando uitvoeren:  
 ```shell
 npm run dev
 ```
 
 ---
-### 6- Scripts toevoegen aan de website 
+### 7- Scripts toevoegen aan de website 
 Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld zo:  
 {% raw %}
 `<link href="/dist/css/main.min.css" rel="stylesheet"> `
 {% endraw %}
+De andere links naar de css bestanden kun je verwijderen.
 
 ---
 ### 7- Scripts toevoegen aan de website 
@@ -67,6 +78,7 @@ Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, b
 {% raw %}
 `<script src="/dist/js/main.js"></script>`
 {% endraw %}
+De andere links naar de javascript bestanden kun je verwijderen.
 
 ---
 ### 8- Controleer
