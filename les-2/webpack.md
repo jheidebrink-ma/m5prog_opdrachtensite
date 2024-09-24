@@ -20,6 +20,7 @@ Maak in je project een aantal folders en bestanden die je als basis nodig hebt:
 - /public/src/js _( dit is de locatie van je javascripts die niet minified zijn )_
 - /public/src/js/main.js _( dit is je js bestand met minimaal een console.log() functie erin )_
 - /public/src/scss _( hierin staan je SASS bestanden )_
+- /public/src/scss/_custom.scss _( je scss bestand met bijvoorbeeld je sass code )_
 - /public/src/scss/main.scss _( je scss bestand met bijvoorbeeld je sass code )_
 - /package.json _( hier staat in welke packages er nodig zijn zoals een sass compiler  )_
 - /webpack.config.js _( hier zijn de functies gedefinieerd voor het compilen van de sass )_  
@@ -35,18 +36,41 @@ Daarnaast zie je ook welke scripts er zijn en welke actie die uitvoeren, bijvoor
 ### 3- webpack.config.js
 In de [webpack.config.js](data%2Fwebpack.config.js) vind je de acties die uitgevoerd worden tijdens het compilen.  
 
---- 
-### 4- main.scss
+---
+### 4- _custom.scss
 Plaats in dit bestand de volgende code:
 ```css
-@import "fonts";
+$body-bg: #fff;
+$body-color: #111;
+
+$blue:    #283d42;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #e72d2d !default;
+$orange:  #b6683a;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$headings-font-family: $font-family-monospace;
+```
+
+--- 
+### 5- main.scss
+Plaats in dit bestand de volgende code:
+```css
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 ```
 Eventueel kun je onderaan nog een paar regels css plaatsen om bijvoorbeeld de achtergrond aan te passen.  
 
+
 ---
-### 5- Packages installeren
+### 6- Packages installeren
 Het installeren van de packages _(dependencies)_ doe je via `npm`.  
 Navigeer daarvoor in de terminal naar je project folder en voer het volgende commando uit:  
 ```shell
@@ -58,14 +82,14 @@ Je ziet nu een `node_modules` folder in je thema folder.
 {: .text-red-100 .fs-4 }
   
 ---
-### 6- Packages compilen
+### 7- Packages compilen
 Om de `sass` en de `javascripts` te compilen en in een `dist` folder te plaatsen kun je het volgende commando uitvoeren:  
 ```shell
 npm run dev
 ```
 
 ---
-### 7- Scripts toevoegen aan de website 
+### 8- Scripts toevoegen aan de website 
 Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld zo:  
 {% raw %}
 `<link href="/dist/css/main.min.css" rel="stylesheet"> `
@@ -73,7 +97,7 @@ Geef in je header aan dat je de css wilt laden uit je dist folder, bijvoorbeeld 
 De andere links naar de css bestanden kun je verwijderen.
 
 ---
-### 7- Scripts toevoegen aan de website 
+### 9- Scripts toevoegen aan de website 
 Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, bijvoorbeeld zo:  
 {% raw %}
 `<script src="/dist/js/main.js"></script>`
@@ -81,15 +105,15 @@ Geef in je footer aan dat je de javascript file wilt laden uit je dist folder, b
 De andere links naar de javascript bestanden kun je verwijderen.
 
 ---
-### 8- Controleer
+### 10- Controleer
 Bekijk je website nu in de browser.
 
 ---
-### 9- Customize JavaScript
+### 11- Customize JavaScript
 Pas nu de `main.js` aan door bijvoorbeeld een `console.log` die aangeeft dat het script werkt toe te voegen.  
 
 ---
-### 10- Customize CSS
+### 12- Customize CSS
 Pas nu de `scss` en vormgeving een beetje nu aan zodat de website voldoet aan de eisen van jouw project.  
 Bijvoorbeeld door de achtergrond aan te passen.
 
