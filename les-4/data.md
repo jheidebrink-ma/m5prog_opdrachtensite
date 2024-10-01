@@ -28,9 +28,4 @@ Hou hier rekening met de parant-child verhouding.
 Exporteer je data en plaats deze in een zip bestand in de root van je repository.
 
 
----
-### Volgende stap:
-{: .text-green-100 .fs-4 }  
-[WordPress header template en functies](header)
-
 

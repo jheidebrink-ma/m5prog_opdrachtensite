@@ -63,6 +63,6 @@ Probeer beide tools uit en bekijk welke too voor jou het prettigst werkt.
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-[WordPress header template en functies](header)
+[Data structureren](data)
 
 
