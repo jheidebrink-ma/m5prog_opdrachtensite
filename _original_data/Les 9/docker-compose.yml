@@ -1,0 +1,40 @@
+version: '3.9'
+
+services:
+
+    wordpress:
+        image: wordpress:latest
+        ports:
+            - 82:80
+        environment:
+            WORDPRESS_DB_HOST: db
+            WORDPRESS_DB_NAME: woocommerce
+            WORDPRESS_DB_USER: woocommerceuser
+            WORDPRESS_DB_PASSWORD: Qw3rt19
+        volumes:
+            - ./public:/var/www/html
+
+    db:
+        image: mysql:latest
+        environment:
+            MYSQL_DATABASE: woocommerce
+            MYSQL_USER: woocommerceuser
+            MYSQL_PASSWORD: Qw3rt19
+            MYSQL_ROOT_PASSWORD: rootpass
+        ports:
+            - 3302:3306
+        volumes:
+            - db:/var/lib/mysql
+
+    # php myadmin in an external image
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        environment:
+            PMA_HOST: db
+            PMA_USER: woocommerceuser
+            PMA_PASSWORD: Qw3rt19
+        ports:
+            - "802:80"
+
+volumes:
+    db: {}
