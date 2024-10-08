@@ -87,6 +87,17 @@ Om de `sass` en de `javascripts` te compilen en in een `dist` folder te plaatsen
 ```shell
 npm run dev
 ```
+**Note**
+Het kan zijn dat je deze error ziet:
+![npm-error.png](images%2Fnpm-error.png)  
+In dat geval moet je de `sass-loader` opnieuw installeren met dit commando:
+```shell
+npm i sass-loader
+```
+Daarna kun je weer compilen via: 
+```shell
+npm run dev
+```
 
 ---
 ### 8- Scripts toevoegen aan de website 
