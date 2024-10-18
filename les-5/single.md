@@ -78,6 +78,6 @@ Pas nu de weergave aan zodat deze pagina er goed uit ziet.
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
 In de volgende pagina ga je één enkele pagina of blog item weergeven.  
-[overzicht pagina](overzicht)
+[GET / POST / REQUEST](requests)
 
 

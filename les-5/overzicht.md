@@ -59,7 +59,7 @@ Als het goed is zie je nu de content uit de database boven de singles staan.
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-In de volgende pagina ga je één enkele single weergeven.  
-[GET / POST / REQUEST](requests)
+In de volgende pagina ga je één enkele single weergeven.
+[single pagina](single)
 
 
