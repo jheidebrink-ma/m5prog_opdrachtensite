@@ -15,7 +15,7 @@ Je request komt nu aan in de `index.php` nu moeten wij in de index.php de reques
 Haal de url op, bijvoorbeeld: http://localhost/genre/single  
 Plaats deze php code in je `index.php`
 ```php
-var_dump( $_SERVER['REDIRECT_URL'] );
+var_dump( $_SERVER['REQUEST_URI'] );
 ```
 Als je de bovenstaande url bekijkt dan zie je dat je in php de url kunt opvangen.  
 
@@ -23,7 +23,7 @@ Als je de bovenstaande url bekijkt dan zie je dat je in php de url kunt opvangen
 ### 2- Array
 Zet de request nu om in een array door de bovenstaande code te vervangen door:
 ```php
-$request_url = explode('/', $_SERVER['REDIRECT_URL']);
+$request_url = explode('/', $_SERVER['REQUEST_URI']);
 ```
 
 ---
