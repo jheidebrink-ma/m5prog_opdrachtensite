@@ -5,3 +5,4 @@
 2. [Registreren van een post type](register)
 3. [Registreren van een taxonomie](taxonomy)
 4. [Weergeven van een Custom post type](view)
+
