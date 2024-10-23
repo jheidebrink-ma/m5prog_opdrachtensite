@@ -73,55 +73,54 @@ require_once('../source/database.php');
 // haal de zoekterm op wanneer deze ingesteld is,
 // als dat niet het geval is wil ik dat de search query leeg is
 $zoekterm = '';
-if ( isset( $_GET['searchquery']) ) {
+if (isset($_GET['searchquery'])) {
     $zoekterm = $_GET['searchquery'];
 }
 
 include('../views/head.php');
 ?>
+    <main class="container my-5">
+        <h2>Je zocht op: `<?= $zoekterm ?>`</h2>
+        <div class="row">
+            <?php
 
-<main class="container my-5">
-    <?php
-
-    echo '<h2>Je zocht op: ' . $zoekterm .'</h2>';
-
-    /* create a query */
-    $query = 'SELECT singles.*, artists.title as artist_title, genres.title as genre_title
+            /* create a query */
+            $query = 'SELECT singles.*, artists.title as artist_title, genres.title as genre_title
                 FROM singles
                 LEFT JOIN artists ON singles.artist_id = artists.id
                 LEFT JOIN genres ON singles.genre_id = genres.id
-                WHERE singles.title LIKE ?
-                LIMIT 1';
+                WHERE singles.title LIKE ?';
 
-    /* create a prepared statement */
-    $stmt = $connection->prepare($query);
+            /* create a prepared statement */
+            $stmt = $connection->prepare($query);
 
-    /* Bind the search term with a variable start and end */
-    $parameter = '%' . $zoekterm . '%';
-    $stmt->bind_param('s', $parameter);
+            /* Bind the search term with a variable start and end */
+            $parameter = '%' . $zoekterm . '%';
+            $stmt->bind_param('s', $parameter);
 
-    /* execute query */
-    $stmt->execute();
+            /* execute query */
+            $stmt->execute();
 
-    /* bind result variables */
-    $result = $stmt->get_result();
+            /* bind result variables */
+            $result = $stmt->get_result();
 
-    /* define an array with the result as long as there is a result */
-    while ($single = mysqli_fetch_assoc($result)) {
-        include('../views/card.php');
-    }
-    ?>
-</main>
+            /* define an array with the result as long as there is a result */
+            while ($single = mysqli_fetch_assoc($result)) {
+                include('../views/card.php');
+            }
+            ?>
+        </div>
+    </main>
 
 <?php
 include('../views/footer.php');
 ```
 
-
 ---
 ### 5- Resultaat in zoek formulier
 Als ik gezocht heb dan is het zoekformulier nu leeg.  
-Kun jij met alle kennis die je nu hebt ( en online kunt vinden ) hoe je in het zoekformulier in het input veld de oude waarde kunt weergeven?
+Kun jij met alle kennis die je nu hebt ( en online kunt vinden ) hoe je in het zoekformulier in het input veld de oude waarde kunt weergeven?  
+
 
 ---
 
