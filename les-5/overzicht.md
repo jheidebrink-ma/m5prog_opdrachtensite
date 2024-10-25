@@ -53,7 +53,7 @@ Achter de link geef je een extra parameter mee, dat doe je als volgt:
 Achter het `=` teken geef je vervolgens de is mee van de single.  
 Het resultaat kan er zo uit zien:  
 ```php
-<a href="/single/<?= $single['slug'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
+<a href="/single.php?singleid=<?php echo $single['id'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
 ```
 
 ---
