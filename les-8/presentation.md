@@ -15,9 +15,7 @@ De presentatie duurt 3 tot 8 minuten per persoon.
 
 ---
 ### Wat te presenteren.
-De volgende onderdelen moet je tijdens je presentatie behandelen: 
-- welk thema heb je gebruikt
-- welke plugins heb je gebruikt
+De volgende onderdelen moet je tijdens je presentatie behandelen:
 - waar liep je tegenaan
 - hoe heb je dit opgelost
 - waar ben je trots op

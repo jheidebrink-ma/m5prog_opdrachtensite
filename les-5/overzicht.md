@@ -43,12 +43,26 @@ De code daarvoor kan er zo uit zien:
 ```
 
 ---
-### 4- Join query
+### 4- Link n aar single pagina
+Maak in de je `card.php` een link je naar een toekomstige pagina: `single.php`  
+Gebruik hiervoor de `a href` tag.  
+Achter de link geef je een extra parameter mee, dat doe je als volgt:
+```php
+/single.php?singleid=
+```
+Achter het `=` teken geef je vervolgens de is mee van de single.  
+Het resultaat kan er zo uit zien:  
+```php
+<a href="/single/<?= $single['slug'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
+```
+
+---
+### 5- Join query
 Kun je nu de query zo aanpassen dat je ook de artiest naam en genre kunt weergeven bij de kaartjes?
 
 
 ---
-### 5- Controleer
+### 6- Controleer
 Bekijk je website nu in de browser.
 Als het goed is zie je nu de content uit de database boven de singles staan.
 
