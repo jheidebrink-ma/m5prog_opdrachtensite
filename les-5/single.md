@@ -17,7 +17,7 @@ Plaats de queries tot en met de while loop boven de plek waar je de data wilt we
 
 ---
 ### 2- Variabele van een single
-Voor nu plaats je bovenaan dit document een variabele `$single_id` en vult daarin een ID van je singles tabel, bijvoorbeeld `1`.
+Voor nu plaats je bovenaan dit document een variabele `$single_id` en vult daarin een ID van je single uit de `singles tabel`, bijvoorbeeld `1`.
 
 --- 
 ### 3- Pas de query aan

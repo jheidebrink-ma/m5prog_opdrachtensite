@@ -37,7 +37,7 @@ Zoek nu in je source het gedeelte op van de navigatie en pas deze zo aan dat je 
 
 ---
 ### 4- About en Single pages
-Kopieer nu de index.php naar de `single.php` én `about.php`  
+Kopieer nu de index.php naar de `single.php` én `about.php`  Zorg ervoor dat deze in je public folder staan.  
 Je hebt nu een website met 3 dezelfde pagina's.  
 Verander wel de titel en een paar stukken van de tekst zodat je weet welke pagina je bekijkt.  
 
