@@ -54,7 +54,7 @@ $stmt->bind_param('s', $mijn_pagina);
 In het overzicht (`card.php`) heb jij als het goed is nog een link naar de singles.php pagina staan.  
 Kun je deze link zo aanpassen dat deze de slug gebruikt?  Bijvoorbeeld zo:
 ```php
-<a href="/single.php?single=<?php echo $single['slug'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
+<a href="/single/<?php echo $single['slug'] ?>" type="button" class="btn btn-sm btn-outline-secondary">Bekijk</a>
 ```
 
 ---
