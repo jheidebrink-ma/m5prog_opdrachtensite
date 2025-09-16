@@ -29,19 +29,19 @@ function GetProducts()
             "name" => "Vanilla Sponge Cake",
             "Description" => "1 whole cake",
             "price" => 15.99,
-            "image" => "https://images.pexels.com/photos/302680/pexels-photo-302680.jpeg"
+            "image" => "https://cdn.pixabay.com/photo/2016/02/29/00/19/cake-1227842_640.jpg"
         ],
         [
             "name" => "Chocolate Fudge Cake",
             "Description" => "1 whole cake",
             "price" => 18.50,
-            "image" => "https://images.pexels.com/photos/4109999/pexels-photo-4109999.jpeg"
+            "image" => "https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_1280.jpg"
         ],
         [
             "name" => "Red Velvet Cake",
             "Description" => "1 whole cake",
             "price" => 17.75,
-            "image" => "https://images.pexels.com/photos/4110010/pexels-photo-4110010.jpeg"
+            "image" => "https://cdn.pixabay.com/photo/2020/03/10/03/49/red-velvet-cake-4917734_640.jpg"
         ]
     ],
     "Breads" => [
@@ -81,7 +81,7 @@ function GetProducts()
             "name" => "Danish Pastry",
             "Description" => "1 piece",
             "price" => 2.95,
-            "image" => "https://images.pexels.com/photos/4110000/pexels-photo-4110000.jpeg"
+            "image" => "https://cdn.pixabay.com/photo/2010/12/10/08/croissant-1128_640.jpg"
         ]
     ]
 ];
